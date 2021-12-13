@@ -61,7 +61,7 @@ html,body{
   color: #fff;
   line-height: 65px;
   text-align: center;
-  background: #333;
+  background: var(--primary-color);
   font-size: 25px;
   font-weight: 500;
   border-radius: 10px 10px 0 0;
@@ -85,10 +85,9 @@ html,body{
 }
 #option-1:checked ~ .option-1,
 #option-2:checked ~ .option-2,
-#option-3:checked ~ .option-3,
-#option-4:checked ~ .option-4{
-  background: #333;
-  border-color: #333;
+#option-3:checked ~ .option-3{
+  background: var(--primary-color);
+  border-color: var(--primary-color);
 }
 .wrapper .box label .dot{
   height: 20px;
@@ -100,9 +99,8 @@ html,body{
 }
 #option-1:checked ~ .option-1 .dot,
 #option-2:checked ~ .option-2 .dot,
-#option-3:checked ~ .option-3 .dot,
-#option-4:checked ~ .option-4 .dot{
-  background: #fff;
+#option-3:checked ~ .option-3 .dot{
+  background: var(--primary-color);
 }
 .box label .dot::before{
   position: absolute;
@@ -117,9 +115,8 @@ html,body{
 }
 #option-1:checked ~ .option-1 .dot::before,
 #option-2:checked ~ .option-2 .dot::before,
-#option-3:checked ~ .option-3 .dot::before,
-#option-4:checked ~ .option-4 .dot::before{
-  background: #333;
+#option-3:checked ~ .option-3 .dot::before{
+  background: var(--primary-color);
   transform: translate(-50%, -50%) scale(1);
 }
 .wrapper .box label .text{
@@ -131,8 +128,7 @@ html,body{
 }
 #option-1:checked ~ .option-1 .text,
 #option-2:checked ~ .option-2 .text,
-#option-3:checked ~ .option-3 .text,
-#option-4:checked ~ .option-4 .text{
+#option-3:checked ~ .option-3 .text{
   color: #fff;
 }
 .wrapper .box input[type="radio"]{
