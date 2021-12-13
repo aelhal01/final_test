@@ -10,11 +10,16 @@ input[type=text], select, textarea {
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   }
 
+  label {
+    display: block;
+    margin: 20px 0;
+  }
+
   /* Style the submit button with a specific outline color etc */
   input[type=submit] {
     display: inline-block;
     text-decoration: none;
-    color: #fff;
+    color: #087745;
     border: 2px solid #04AA6D;
     padding: 12px 34px;
     font-size: 13px;
@@ -25,7 +30,7 @@ input[type=text], select, textarea {
   /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
     background-color: #45a049;
-    border: 1px solid #CB0001;
+    border: 1px solid #087745;
     transition: 1s;
   }
 
