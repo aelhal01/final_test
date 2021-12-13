@@ -51,8 +51,7 @@
                     Fill out the form below and choose the most accurate options to find your ultimate workout partner
                 </p>
                 <div class="container1">
-
-                    <form name="searchForm" onsubmit="event.preventDeafult(); validateForm()">
+                    <form name="matchForm">
 
                       <!-- First Name -->
                       <label for="fname">First Name</label>
@@ -66,59 +65,23 @@
                       <label for="email">Email</label>
                       <input type="text" id="email" name="email" placeholder="FirstLast@gmail.com">
 
-
-                      <div class="select-group">
-                        <!-- Age -->
-                        <label for="button">How old are you?</label>
-                        <button class="button" id="button">
-                          <span id="select-label">- Select an option -</span>
-                          <div class="arrow"></div>
-                        </button>
-
-                        <div class="dropdown">
-                          <label class="select-item" for="select-under18">Under 18</label>
-                          <input class="option" id="select-under18" type="radio" name="age" value="under18">
-
-                          <label class="select-item" for="select-18to23">18 - 23</label>
-                          <input class="option" id="select-18to23" type="radio" name="age" value="18to23">
-
-                          <label class="select-item" for="select-24to29">24 - 29</label>
-                          <input class="option" id="select-24to29" type="radio" name="age" value="under18">
-
-                          <label class="select-item" for="select-30to35">30 - 35</label>
-                          <input class="option" id="select-30to35" type="radio" name="age" value="under18">
-
-                          <label class="select-item" for="select-over35">Over 35</label>
-                          <input class="option" id="select-over35" type="radio" name="age" value="under18">
-                        </div>
-
-
-                        <!-- Type of Workout
-                        <div class="dropdown">
-                        </div>
-
-                        Workout Schedule
-                        <div class="dropdown">
-                        </div> -->
-                      </div>
-
-                      <!-- <label for="age">Age</label>
+                      <label for="age">How old are you?</label>
                       <select id="age" name="age">
-                        <option value="ageMIN">Less than 18</option>
-                        <option value="age1">18-23</option>
-                        <option value="age2">24-29</option>
-                        <option value="age3">30-35</option>
-                        <option value="ageMAX">More than 35</option>
+                        <option value="ageMIN">Less than 18 years old</option>
+                        <option value="age1">18-23 years old</option>
+                        <option value="age2">24-29 years old</option>
+                        <option value="age3">30-35 years old</option>
+                        <option value="ageMAX">More than 35 years old</option>
                       </select>
 
-                      <label for="sportType">Type of Workout</label>
+                      <label for="sportType">What type of training do you prefer?</label>
                       <select id="sportType" name="sportType">
                         <option value="endurance">Endurance Training</option>
                         <option value="weight">Weight Training</option>
                         <option value="felxibility">Flexibility Training</option>
                       </select>
 
-                      <label for="schedule">Usual Workout Schedule</label>
+                      <label for="schedule">When do you usually workout?</label>
                       <select id="schedule" name="schedule">
                         <option value="morning">Morning</option>
                         <option value="afternoon">Afternoon</option>
@@ -159,8 +122,6 @@
 </html>
 
 <script language="javascript">
-
-
     function validateForm() {
     let x = document.forms["ambassadorForm"]["fname"].value;
     let y = document.forms["ambassadorForm"]["lname"].value;
@@ -189,5 +150,4 @@
             alert("Your form has been submitted");
         }
     }
-
 </script>
