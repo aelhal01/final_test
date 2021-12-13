@@ -39,20 +39,8 @@ input[type=text], select {
 
 
   /* TEST */
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-html,body{
-  display: grid;
-  height: 100%;
-  place-items: center;
-}
 .wrapper{
-  width: 350px;
+  width: 100%;
   background: #fff;
   border-radius: 10px;
   box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
