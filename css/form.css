@@ -1,48 +1,27 @@
+/* Add a background color and some padding around the form */
+.container1 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
 h2{
   text-decoration: underline;
   padding: 10px;
 }
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-  }
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+}
 
-  /* Style the submit button with a specific outline color etc */
-  input[type=submit] {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    border: 2px solid #04AA6D;
-    padding: 12px 34px;
-    font-size: 13px;
-    background-color: #45a049;
-    cursor: pointer;
-  }
-
-  /* When moving the mouse over the submit button, fill button with a green color */
-  input[type=submit]:hover {
-    background-color: #001dab;
-    border: 1px solid #001dab;
-    transition: 1s;
-    color: #fff;
-  }
-
-  /* Add a background color and some padding around the form */
-  .container1 {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-
-
-
-  /* TEST */
+/* Style big question boxes & radio buttons */
 .wrapper{
   width: 100%;
   background: #fff;
@@ -127,4 +106,24 @@ input[type=text], select {
 
 input[type=radio] {
   cursor: pointer;
+}
+
+/* Style the submit button with a specific outline color etc */
+input[type=submit] {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #04AA6D;
+  padding: 12px 34px;
+  font-size: 13px;
+  background-color: #45a049;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, fill button with a green color */
+input[type=submit]:hover {
+  background-color: #001dab;
+  border: 1px solid #001dab;
+  transition: 1s;
+  color: #fff;
 }
