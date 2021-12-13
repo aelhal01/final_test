@@ -12,3 +12,11 @@ function validateForm() {
     nameInput1.classList.add("error-border");
   }
 }
+
+// Clear errors
+function clearMessages() {
+  for(let i = 0, i < errorNodes.length; i++) {
+    errorNodes[i].innerText = "";
+  }
+  nameInput1.classList.remove("error-border");
+}
