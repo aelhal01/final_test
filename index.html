@@ -56,15 +56,12 @@
 
                       <label for="fname">First Name</label>
                       <input type="text" id="fname" name="firstname" placeholder="Your name">
-                      <small class="error"></small>
 
                       <label for="lname">Last Name</label>
                       <input type="text" id="lname" name="lastname" placeholder="Your last name">
-                      <small class="error"></small>
 
                       <label for="email">Email</label>
                       <input type="text" id="email" name="email" placeholder="FirstLast@gmail.com">
-                      <small class="error"></small>
 
                       <label for="age">Age</label>
                       <select id="age" name="age">
@@ -89,15 +86,12 @@
                         <option value="night">Night</option>
                       </select>
 
-                      <input type="submit" value="Submit" onclick=submitted()>
-
+                      <input type="submit" value="Submit" onclick="submit()">
 
                     </form>
                   </div>
             </div>
         </div>
-
-        <script src="script/form.js"></script>
     </section>
 
     <!-- Footer -->
@@ -123,3 +117,37 @@
     </footer>
 </body>
 </html>
+
+<script language="javascript">
+
+
+    function validateForm() {
+    let x = document.forms["ambassadorForm"]["fname"].value;
+    let y = document.forms["ambassadorForm"]["lname"].value;
+    let z = document.forms["ambassadorForm"]["email"].value;
+
+        if (x == "") {
+            alert("First name must be filled out");
+            return false;
+        }
+        else if (y == "") {
+            alert("Last name must be filled out");
+            return false;
+        }
+        else if (z == "") {
+            alert("Email must be filled out");
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    function submitted() {
+        var valid_form = validateForm();
+        if (valid_form) {
+            alert("Your form has been submitted");
+        }
+    }
+
+</script>
