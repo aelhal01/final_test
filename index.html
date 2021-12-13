@@ -54,16 +54,53 @@
 
                     <form name="searchForm" onsubmit="event.preventDeafult(); validateForm()">
 
+                      <!-- First Name -->
                       <label for="fname">First Name</label>
                       <input type="text" id="fname" name="firstname" placeholder="Your name">
 
+                      <!-- Last Name -->
                       <label for="lname">Last Name</label>
                       <input type="text" id="lname" name="lastname" placeholder="Your last name">
 
+                      <!-- Email -->
                       <label for="email">Email</label>
                       <input type="text" id="email" name="email" placeholder="FirstLast@gmail.com">
 
-                      <label for="age">Age</label>
+
+                      <!-- Age -->
+                      <label for="button">How old are you?</label>
+                      <button class="button" id="button">
+                        <span id="select-label">- Select one option -</span>
+                        <div class="arrow"></div>
+                      </button>
+
+                      <div class="dropdown">
+                        <label class="select-item" for="select-under18">Under 18</label>
+                        <input class="option" id="select-under18" type="radio" name="age" value="under18">
+
+                        <label class="select-item" for="select-18to23">18 - 23</label>
+                        <input class="option" id="select-18to23" type="radio" name="age" value="18to23">
+
+                        <label class="select-item" for="select-24to29">24 - 29</label>
+                        <input class="option" id="select-24to29" type="radio" name="age" value="under18">
+
+                        <label class="select-item" for="select-30to35">30 - 35</label>
+                        <input class="option" id="select-30to35" type="radio" name="age" value="under18">
+
+                        <label class="select-item" for="select-over35">Over 35</label>
+                        <input class="option" id="select-over35" type="radio" name="age" value="under18">
+                      </div>
+
+
+                      <!-- Type of Workout -->
+                      <div class="dropdown">
+                      </div>
+
+                      <!-- Workout Schedule -->
+                      <div class="dropdown">
+                      </div>
+
+                      <!-- <label for="age">Age</label>
                       <select id="age" name="age">
                         <option value="ageMIN">Less than 18</option>
                         <option value="age1">18-23</option>
@@ -85,6 +122,7 @@
                         <option value="afternoon">Afternoon</option>
                         <option value="night">Night</option>
                       </select>
+                      -->
 
                       <input type="submit" value="Submit" onclick=submitted()>
 
