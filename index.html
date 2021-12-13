@@ -52,7 +52,7 @@
                 </p>
                 <div class="container2">
 
-                    <form name="searchForm">
+                    <form name="searchForm" onsubmit="event.preventDeafult(); validateForm()">
 
                       <label for="fname">First Name</label>
                       <input type="text" id="fname" name="firstname" placeholder="Your name">
