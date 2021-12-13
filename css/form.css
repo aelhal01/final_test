@@ -17,18 +17,18 @@ input[type=text], select {
   input[type=submit] {
     display: inline-block;
     text-decoration: none;
-    color: #087745;
+    color: #fff;
     border: 2px solid #04AA6D;
     padding: 12px 34px;
     font-size: 13px;
-    background: transparent;
+    background-color: #45a049;
     cursor: pointer;
   }
 
   /* When moving the mouse over the submit button, fill button with a green color */
   input[type=submit]:hover {
-    background-color: #45a049;
-    border: 1px solid #087745;
+    background-color: #001dab;
+    border: 1px solid #001dab;
     transition: 1s;
     color: #fff;
   }
