@@ -42,6 +42,7 @@
         </div>
     </section>
 
+
     <!-- Form -->
     <section class="features-sub-head bg-light py-3">
         <div class="container grid">
@@ -53,59 +54,71 @@
                 <div class="container1">
                     <form name="matchForm">
 
-                      <!-- First Name -->
-                      <label for="fname">First Name</label>
-                      <input type="text" id="fname" name="firstname" placeholder="Your name">
+                      <!-- Info -->
+                      <div class="info">
+                        <h2>General Information</h2>
+                        <!-- First Name -->
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name">
 
-                      <!-- Last Name -->
-                      <label for="lname">Last Name</label>
-                      <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                        <!-- Last Name -->
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name">
 
-                      <!-- Email -->
-                      <label for="email">Email</label>
-                      <input type="text" id="email" name="email" placeholder="FirstLast@gmail.com">
+                        <!-- Email -->
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="FirstLast@gmail.com">
+                      </div>
 
-                      <label for="age">How old are you?</label>
-                      <select id="age" name="age">
-                        <option value="age1">18-23 years old</option>
-                        <option value="age2">24-29 years old</option>
-                        <option value="age3">30-35 years old</option>
-                      </select>
 
-                      <label for="sportType">What type of training do you prefer?</label>
-                      <select id="sportType" name="sportType">
-                        <option value="endurance">Endurance Training</option>
-                        <option value="weight">Weight Training</option>
-                        <option value="felxibility">Flexibility Training</option>
-                      </select>
+                      <!-- Questions -->
+                      <div class="questions">
+                        <h2>Specific Questions</h2>
+                        <!-- Age -->
+                        <label for="age">How old are you?</label>
+                        <select id="age" name="age">
+                          <option value="age1">18-23 years old</option>
+                          <option value="age2">24-29 years old</option>
+                          <option value="age3">30-35 years old</option>
+                        </select>
 
-                      <label for="schedule">When do you usually workout?</label>
-                      <select id="schedule" name="schedule">
-                        <option value="morning">Morning</option>
-                        <option value="afternoon">Afternoon</option>
-                        <option value="night">Night</option>
-                      </select>
+                        <!-- Sport Type -->
+                        <label for="sportType">What type of training do you prefer?</label>
+                        <select id="sportType" name="sportType">
+                          <option value="endurance">Endurance Training</option>
+                          <option value="weight">Weight Training</option>
+                          <option value="felxibility">Flexibility Training</option>
+                        </select>
 
-                      <!--TEST-->
-                      <div class="wrapper">
-                        <div class="title">What type of workout do you prefer?</div>
-                        <div class="box">
-                          <input type="radio" name="select" id="option-1">
-                          <input type="radio" name="select" id="option-2">
-                          <input type="radio" name="select" id="option-3">
-                          <input type="radio" name="select" id="option-4">
-                          <label for="option-1" class="option-1">
-                            <div class="dot"></div>
-                            <div class="text">Flexibility Training</div>
-                          </label>
-                          <label for="option-2" class="option-2">
-                            <div class="dot"></div>
-                            <div class="text">Weight Training</div>
-                          </label>
-                          <label for="option-3" class="option-3">
-                            <div class="dot"></div>
-                            <div class="text">Endurance Training</div>
-                          </label>
+                        <!-- Workout Schedule -->
+                        <label for="schedule">When do you usually workout?</label>
+                        <select id="schedule" name="schedule">
+                          <option value="morning">Morning</option>
+                          <option value="afternoon">Afternoon</option>
+                          <option value="night">Night</option>
+                        </select>
+
+                        <!--TEST-->
+                        <div class="wrapper">
+                          <div class="title">What type of workout do you prefer?</div>
+                          <div class="box">
+                            <input type="radio" name="select" id="option-1">
+                            <input type="radio" name="select" id="option-2">
+                            <input type="radio" name="select" id="option-3">
+                            <input type="radio" name="select" id="option-4">
+                            <label for="option-1" class="option-1">
+                              <div class="dot"></div>
+                              <div class="text">Flexibility Training</div>
+                            </label>
+                            <label for="option-2" class="option-2">
+                              <div class="dot"></div>
+                              <div class="text">Weight Training</div>
+                            </label>
+                            <label for="option-3" class="option-3">
+                              <div class="dot"></div>
+                              <div class="text">Endurance Training</div>
+                            </label>
+                          </div>
                         </div>
                       </div>
 
