@@ -120,3 +120,7 @@ input[type=text], select {
 .wrapper .box input[type="radio"]{
   display: none;
 }
+
+input[type=radio] {
+  cursor: pointer;
+}
