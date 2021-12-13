@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Fitness, lifting, healthy, gym">
+    <meta name="keywords" content="Fitness, ambassador, influencer, fitspo">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+
     <title>Gym Buddy.</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script/index.js"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -30,91 +30,71 @@
         </div>
     </div>
 
-    <!-- Showcase -->
-    <section class="showcase">
+    <!-- Head -->
+    <section class="features-head bg-primary py-3">
         <div class="container grid">
-            <div class="showcase-text">
-                <h1>Find a Gym Buddy!</h1>
-                <p>With our app, you will be able to find a gym buddy to help you stay motivated and get those gains</p>
-                <a href="features.html" class="btn btn-outline">Read More</a>
-            </div>
-
-            <div class="showcase-form card">
-                <h2>Join our Email List for Free Supplements and Protein Powder</h2>
-                 <form>
-                    <div class="form-control">
-                        <input type="text" name="name" placeholder="Name" required>
-                    </div>
-                    <div class="form-control">
-                        <input type="email" name="email" placeholder="Email" required>
-                    </div>
-                    <input type="submit" value="Send" class="btn btn-primary">
-                </form>
+            <div>
+                <h1 class="xl">Gym Buddy Finder</h1>
+                <p class="lead">
+                    Your journey to search for your Gym Buddy starts here:
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Stats -->
-    <section class="stats">
-        <div class="container">
-            <h3 class="stats-heading text-center my-1">
-                How Many People We've Helped
-            </h3>
-
-            <div class="grid grid-3 text-center my-4">
-                <div>
-                    <i class="fas fa-dumbbell fa-3x"></i>
-                    <h3>5,000,000</h3>
-                    <p class="text-secondary">Dumbbells Pressed</p>
-                </div>
-                <div>
-                    <i class="fas fa-running fa-3x"></i>
-                    <h3>10,000</h3>
-                    <p class="text-secondary">Miles Ran</p>
-                </div>
-                <div>
-                    <i class="fas fa-heartbeat fa-3x"></i>
-                    <h3>10,000,000</h3>
-                    <p class="text-secondary">Calories Burned</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tinder -->
-    <section class="cloud bg-primary my-2 py-2">
+    <!-- Form -->
+    <section class="features-sub-head bg-light py-3">
         <div class="container grid">
-            <div class="text-center">
-                <h2 class="lg">Like Tinder But for Gains</h2>
-                <p class="lead my-1">Over 5,000,000 Active Users and different strengths and body types so you can find your perfect partner!</p>
-                <a href="features.html" class="btn btn-dark">Read More</a>
-            </div>
-            <img class= "img1" src="images/logos/tinder.png" height="400" width="50" alt="">
-        </div>
-    </section>
+            <div>
+                <h1 class="md">Get Matched!</h1>
+                <p>
+                    Fill out the form below and choose the most accurate options to find your ultimate workout partner!
+                </p>
+                <div class="container2">
 
-    <!-- Exercises -->
-    <section class="languages">
-        <h2 class="md text-center my-2">
-            Supported Excercises
-        </h2>
-        <div class="container flex">
-            <div class="card">
-                <h4>Bench Press</h4>
-                <img src="images/alora-griffiths-V3GnMeRhnjk-unsplash.jpg" alt="" height="100" width="200">
+                    <form name="searchForm">
+
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name">
+                      <small class="error"></small>
+
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                      <small class="error"></small>
+
+                      <label for="email">Email</label>
+                      <input type="text" id="email" name="email" placeholder="FirstLast@gmail.com">
+                      <small class="error"></small>
+
+                      <label for="age">Age</label>
+                      <select id="age" name="age">
+                        <option value="ageMIN">Less than 18</option>
+                        <option value="age1">18-23</option>
+                        <option value="age2">24-29</option>
+                        <option value="age3">30-35</option>
+                        <option value="ageMAX">More than 35</option>
+                      </select>
+
+                      <label for="sportType">Type of Workout</label>
+                      <select id="sportType" name="sportType">
+                        <option value="endurance">Endurance Training</option>
+                        <option value="weight">Weight Training</option>
+                        <option value="felxibility">Flexibility Training</option>
+                      </select>
+
+                      <label for="schedule">Usual Workout Schedule</label>
+                      <select id="schedule" name="schedule">
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="night">Night</option>
+                      </select>
+
+                      <input type="submit" value="Submit" onclick=submitted()>
+
+
+                    </form>
+                  </div>
             </div>
-            <div class="card">
-                <h4>Squat</h4>
-                <img src="images/alora-griffiths-TuzrzArccvc-unsplash.jpg" alt="" height="100" width="200">
-              </div>
-              <div class="card">
-                <h4>Deadlift</h4>
-                <img src="images/anastase-maragos-9dzWZQWZMdE-unsplash.jpg" alt="" height="100" width="200">
-              </div>
-              <div class="card">
-                <h4>Cardio</h4>
-                <img src="images/cameron-venti-I1EWTM5mFEM-unsplash.jpg" alt="" height="100" width="200">
-              </div>
         </div>
     </section>
 
@@ -126,7 +106,7 @@
                 </h1>
                 <p>Copyright &copy; 2021</p>
             </div>
-            <nav>
+           <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="docs.html">Contact</a></li>
@@ -141,3 +121,38 @@
     </footer>
 </body>
 </html>
+
+
+<script language="javascript">
+
+
+    function validateForm() {
+    let x = document.forms["ambassadorForm"]["fname"].value;
+    let y = document.forms["ambassadorForm"]["lname"].value;
+    let z = document.forms["ambassadorForm"]["email"].value;
+
+        if (x == "") {
+            alert("First name must be filled out");
+            return false;
+        }
+        else if (y == "") {
+            alert("Last name must be filled out");
+            return false;
+        }
+        else if (z == "") {
+            alert("Email must be filled out");
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    function submitted() {
+        var valid_form = validateForm();
+        if (valid_form) {
+            alert("Your form has been submitted");
+        }
+    }
+
+</script>
