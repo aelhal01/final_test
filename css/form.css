@@ -2,22 +2,11 @@
 input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */
-    border: none;
-    border-bottom: 1px solid #ccc; /* Gray bottom border */
+    border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-
-  input[type=text]:focus, textarea:focus {
-    border-bottom: 1px solid rgb(255, 0, 106);
-  }
-
-  label {
-    display: block;
-    margin: 20px 0;
   }
 
   /* Style the submit button with a specific outline color etc */
@@ -32,11 +21,12 @@ input[type=text], select, textarea {
     cursor: pointer;
   }
 
-  /* When moving the mouse over the submit button, add a darker green color */
+  /* When moving the mouse over the submit button, fill button with a green color */
   input[type=submit]:hover {
     background-color: #45a049;
     border: 1px solid #087745;
     transition: 1s;
+    color: #fff;
   }
 
   /* Add a background color and some padding around the form */
@@ -44,4 +34,8 @@ input[type=text], select, textarea {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+  }
+
+  .error {
+    
   }
